@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overseas Smart Parking Guidance & Fee Payment Management System | Shenzhen ParkPro Technology Co., Ltd. (帕格泊科技)</title>
+  <meta name="description" content="Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司) provides turnkey overseas parking service systems, intelligent fee collection, ANPR/LPR access control, and ultrasonic parking guidance for airports, commercial plazas, and car parks worldwide.">
+  <meta name="keywords" content="ParkPro Technology, 深圳市帕格泊科技有限公司, Overseas parking management system, parking fee collection system, airport parking guidance, commercial plaza parking system, Jutai parking guidance case, barrier gate access control, ticket dispenser, cashier POS">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Top Utility Bar (Multi-language & Direct Sales Contacts)
+       ========================================================================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-contacts">
+        <span class="top-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          Room 409, 4th Floor, Qinghu Hengbo Innovation Industrial Park, Longhua District, Shenzhen, Guangdong Province
+        </span>
+        <a href="mailto:jadehuang57@gmail.com" class="top-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          jadehuang57@gmail.com
+        </a>
+        <a href="https://wa.me/8615677223292" target="_blank" class="top-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          WhatsApp: +86 15677223292
+        </a>
+      </div>
+
+      <div class="top-right">
+        <!-- Language Switcher -->
+        <div class="lang-selector" id="langSelector">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          <span>English (Global)</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="#">🇺🇸 English</a>
+            <a href="#">🇪🇸 Español</a>
+            <a href="#">🇫🇷 Français</a>
+            <a href="#">🇩🇪 Deutsch</a>
+            <a href="#">🇦🇪 العربية (Arabic)</a>
+            <a href="#">🇷🇺 Русский</a>
+            <a href="#">🇵🇹 Português</a>
+            <a href="#">🇯🇵 日本語</a>
+          </div>
+        </div>
+
+        <a href="#inquirySection" class="badge badge-accent">OEM/ODM Available</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. Main Navigation Header
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="site-logo" title="Shenzhen ParkPro Technology Co., Ltd.">
+        <div class="logo-emblem">P</div>
+        <div class="logo-text">
+          <div class="logo-brand">PARK<span>PRO</span></div>
+          <div class="logo-subtitle">Shenzhen ParkPro Technology (帕格泊科技)</div>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="solutions.html" class="nav-link">Solutions</a>
+        <a href="products.html" class="nav-link">Products & Hardware</a>
+        <a href="#softwareSection" class="nav-link">Cloud Platform</a>
+        <a href="#scenariosSection" class="nav-link">Airport & Mall Cases</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-search">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+          <input type="text" placeholder="Search systems...">
+        </div>
+        <button class="btn btn-accent btn-sm open-quote-modal">Get Best Price</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. Page Banner & Solution Headline
+       ========================================================================= -->
+  <section class="page-banner">
+    <div class="container banner-content">
+      <div class="banner-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        Global Solution Showcase | Turnkey Export Engineering
+      </div>
+      <h1 class="banner-title">Turnkey Overseas Parking Service System: Automated Fee Collection & Ultrasonic Guidance</h1>
+      <p class="banner-desc">
+        Engineered specifically for international commercial plazas, international airports, municipal transit hubs, and smart parking garages. Integrating ticket dispensers, barcode validators, manual cashier POS, LPR cameras, and real-time cloud management.
+      </p>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. Breadcrumb Navigation
+       ========================================================================= -->
+  <div class="breadcrumb-wrap">
+    <div class="container breadcrumbs">
+      <a href="index.html">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        Home
+      </a>
+      <span class="sep">></span>
+      <a href="solutions.html">Solutions & Cases</a>
+      <span class="sep">></span>
+      <span class="current">Overseas Parking Service & Fee Management System</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       5. Two-Column Main Layout (Jutai Reference Pattern)
+       ========================================================================= -->
+  <main class="main-layout">
+    <div class="container layout-grid">
+
+      <!-- =====================================================================
+           LEFT SIDEBAR: Fast Navigation & Direct B2B Contact
+           ===================================================================== -->
+      <aside class="sidebar">
+
+        <!-- Navigation Jump Index -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">
+            <span>Solution Sections</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+          </div>
+          <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-item active"><a href="#projectOverview">1. Project Overview & Background <span class="counter">01</span></a></li>
+            <li class="sidebar-nav-item"><a href="#systemArchitecture">2. Dual System Architectures <span class="counter">02</span></a></li>
+            <li class="sidebar-nav-item"><a href="#entryStation">3. Smart Entry Station (Dispenser) <span class="counter">03</span></a></li>
+            <li class="sidebar-nav-item"><a href="#exitStation">4. Smart Exit Station (Validator) <span class="counter">04</span></a></li>
+            <li class="sidebar-nav-item"><a href="#cashierWorkstation">5. Cashier POS Workstation <span class="counter">05</span></a></li>
+            <li class="sidebar-nav-item"><a href="#softwareSection">6. Cloud & Cashier Software <span class="counter">06</span></a></li>
+            <li class="sidebar-nav-item"><a href="#scenariosSection">7. Airport & Mall Scenarios <span class="counter">07</span></a></li>
+            <li class="sidebar-nav-item"><a href="#techSpecs">8. Technical Specifications <span class="counter">08</span></a></li>
+            <li class="sidebar-nav-item"><a href="#inquirySection">9. Request Official Quotation <span class="counter">RFQ</span></a></li>
+          </ul>
+        </div>
+
+        <!-- B2B Contact Card (Jade Huang / Overseas Sales) -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">
+            <span>Overseas Sales Team</span>
+            <span class="badge badge-success">Online</span>
+          </div>
+          <div class="contact-card">
+            <div class="contact-avatar">👩‍💼</div>
+            <div class="contact-name">Jade Huang</div>
+            <div class="contact-role">Overseas Project Director</div>
+
+            <div class="contact-detail-list">
+              <div class="contact-detail-row">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <a href="mailto:jadehuang57@gmail.com">jadehuang57@gmail.com</a>
+              </div>
+              <div class="contact-detail-row">
+                <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span>+86 15677223292</span>
+              </div>
+              <div class="contact-detail-row">
+                <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                <span>Monday to Friday: 9:00am- 18:00pm</span>
+              </div>
+            </div>
+
+            <!-- Social Chat Icons -->
+            <div class="social-chat-icons">
+              <a href="https://wa.me/8615677223292" target="_blank" class="social-btn social-wa" title="Chat on WhatsApp">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              </a>
+              <a href="mailto:jadehuang57@gmail.com" class="social-btn social-mail" title="Send Direct Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+              <div class="social-btn social-wechat" title="WeChat QR Code">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8.5 14c-4.14 0-7.5-2.91-7.5-6.5C1 3.91 4.36 1 8.5 1S16 3.91 16 7.5c0 3.59-3.36 6.5-7.5 6.5zm7.25-4c-.21 0-.41.02-.62.05 1.15 1.15 1.87 2.65 1.87 4.32 0 1.34-.47 2.58-1.28 3.59L17 21l-2.61-1.31c-.72.2-1.49.31-2.28.31-2.94 0-5.46-1.57-6.49-3.84 3.96-.28 7.13-3.23 7.13-6.91 0-.43-.04-.84-.1-1.25z"/></svg>
+                <div class="wechat-popup">
+                  <div style="font-size:2rem;">📱</div>
+                  <p>WeChat: 15677223292</p>
+                  <span style="font-size:0.7rem; color:#64748b;">Scan or add directly</span>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-accent btn-sm open-quote-modal" style="width:100%;">Contact Sales Now</button>
+          </div>
+        </div>
+
+        <!-- Global Export Guarantees -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">
+            <span>Global Export Assurance</span>
+          </div>
+          <div class="sidebar-badges">
+            <div class="badge-item">
+              <div class="badge-icon">✓</div>
+              <div>
+                <strong>CE & FCC Certified</strong>
+                <p style="font-size:0.75rem; color:#64748b;">Fully compliant with European & US standards</p>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🌐</div>
+              <div>
+                <strong>Multi-Currency POS</strong>
+                <p style="font-size:0.75rem; color:#64748b;">Supports USD, EUR, GBP, AED, SAR, etc.</p>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">🛡️</div>
+              <div>
+                <strong>3-Year Hardware Warranty</strong>
+                <p style="font-size:0.75rem; color:#64748b;">Free spare parts replacement & remote config</p>
+              </div>
+            </div>
+            <div class="badge-item">
+              <div class="badge-icon">⚡</div>
+              <div>
+                <strong>99.9% Recognition Rate</strong>
+                <p style="font-size:0.75rem; color:#64748b;">Deep learning neural LPR & loop sensors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Download System Brochure -->
+        <div class="sidebar-box" style="padding:16px; background:#f0fdf4; border-color:#bbf7d0;">
+          <h4 style="color:#166534; font-size:0.95rem; margin-bottom:6px;">📥 Export Specifications</h4>
+          <p style="font-size:0.8rem; color:#15803d; margin-bottom:12px;">Get detailed CAD wiring diagrams, API SDK docs, and installation guidelines.</p>
+          <a href="#inquirySection" class="btn btn-outline btn-sm" style="background:#fff; width:100%; border-color:#86efac; color:#166534;">Download Project Pack (PDF)</a>
+        </div>
+
+      </aside>
+
+      <!-- =====================================================================
+           RIGHT MAIN CONTENT: Comprehensive Solution Article & Products
+           ===================================================================== -->
+      <section class="main-content">
+
+        <!-- Article Header -->
+        <div class="article-header">
+          <div class="article-tags">
+            <span class="badge badge-primary">Commercial Plazas</span>
+            <span class="badge badge-accent">International Airports</span>
+            <span class="badge badge-success">Smart City Garages</span>
+            <span class="badge badge-primary">Automated Fee Collection</span>
+          </div>
+          <h2 class="article-title">Intelligent Overseas Parking Service System: Automated Fee Collection & Space Guidance Solution</h2>
+          <div class="article-meta">
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+              Updated: 2026-09-24
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              Read Count: 14,820
+            </span>
+            <span class="meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              Author: ParkPro Overseas Engineering Team
+            </span>
+          </div>
+        </div>
+
+        <!-- Section 1: Overview & Project Background -->
+        <section id="projectOverview">
+          <h3 class="section-h2">1. Overview & Overseas Project Background</h3>
+          <p class="content-p">
+            With the rapid growth of automotive ownership worldwide, parking facilities in overseas metropolitan areas, international airports, railway hubs, and large-scale commercial centers face unprecedented operating pressures. The contradiction between limited parking capacity and high turnover demand frequently leads to chronic road bottlenecks, elevated labor expenditures, ticket disputes, and revenue leakage.
+          </p>
+
+          <div class="callout">
+            <div class="callout-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Common Operational Bottlenecks in Overseas Parking Operations:
+            </div>
+            <ul class="highlight-list" style="margin-bottom:0;">
+              <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Lack of Real-Time Vacancy Visibility:</strong> Drivers circulate blindly inside the facility, generating severe congestion and carbon emissions.</li>
+              <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Excessive Manual Labor Overhead:</strong> Traditional manned cashier booths suffer from slow transaction speeds, human error, cash handling risks, and high shift costs.</li>
+              <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Disjointed Validation & Commercial Discounts:</strong> Shopping malls struggle to integrate merchant receipts, dynamic discounts, and grace periods with exit gates.</li>
+              <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Multi-Currency & International Compliance Gaps:</strong> Inability to seamlessly handle diverse foreign cards, NFC mobile payments, and tax-compliant digital invoicing.</li>
+            </ul>
+          </div>
+
+          <p class="content-p">
+            <strong>Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司)</strong> delivers a complete, modular, and field-tested <strong>Overseas Smart Parking Service System</strong>. Combining barcode/RFID ticket dispensers, motorized ticket validators, high-speed barrier gates, ultrasonic space detection, and an all-in-one software platform, our system achieves maximum vehicle throughput, accurate automated fee billing, and zero revenue leakage.
+          </p>
+        </section>
+
+        <!-- Section 2: Dual System Architectures -->
+        <section id="systemArchitecture">
+          <h3 class="section-h2">2. Dual Flexible Operational Modes & System Topologies</h3>
+          <p class="content-p">
+            To accommodate distinct traffic patterns and site budgets across international airports, downtown shopping malls, and standalone parking garages, ParkPro provides two primary operating modes alongside ticketless license plate recognition (ANPR/LPR).
+          </p>
+
+          <!-- System Architecture Image 1 -->
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241018104915_51230.jpg" alt="Dual Parking Operation Modes: Central Charging Mode vs Exit Charging Mode Architecture">
+            </div>
+            <div class="img-caption">
+              <span>Figure 1: Dual Operational Modes Architecture (Solution 1: Central Charging vs Solution 2: Exit Charging)</span>
+              <span class="img-zoom-hint">(Click to view high-res diagram)</span>
+            </div>
+          </div>
+
+          <!-- Dual Solution Grid -->
+          <div class="solution-grid">
+            <div class="solution-card">
+              <div class="solution-card-header">
+                <span class="solution-title">Solution 1: Central Charging Mode</span>
+                <span class="badge badge-primary">Recommended for High Turnover</span>
+              </div>
+              <p class="content-p" style="font-size:0.9rem;">
+                <strong>Pay-on-Foot / Central Cashier:</strong> Drivers take a thermal barcode ticket or RFID card at the entry station. Prior to returning to their vehicle, they pay at the central cashier desk or self-service payment kiosk inside the mall or terminal lobby.
+              </p>
+              <ul class="highlight-list" style="font-size:0.85rem; margin-top:8px;">
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Rapid exit clearance: driver inserts paid ticket at exit station and the barrier opens instantly (3-5s per vehicle).</li>
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Configurable grace period (e.g. 15-30 minutes) allowing ample time to retrieve vehicle and reach the gate.</li>
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Eliminates exit gate queues in busy airports and shopping mall peak hours.</li>
+              </ul>
+            </div>
+
+            <div class="solution-card">
+              <div class="solution-card-header">
+                <span class="solution-title">Solution 2: Exit Charging Mode</span>
+                <span class="badge badge-accent">Ideal for Compact Sites</span>
+              </div>
+              <p class="content-p" style="font-size:0.9rem;">
+                <strong>Direct Exit Payment:</strong> The vehicle approaches the exit lane directly. The security guard or cashier booth scans the entry ticket, collects cash or card payment on the spot, and manually or automatically triggers barrier lift.
+              </p>
+              <ul class="highlight-list" style="font-size:0.85rem; margin-top:8px;">
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Reduced initial equipment investment: no requirement for standalone pay-on-foot lobbies.</li>
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Centralized guard supervision at the exit gate for enhanced security checks.</li>
+                <li class="highlight-item"><span class="bullet-icon">✓</span> Seamlessly integrates UHF long-range RFID readers for subscribed monthly tenants.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3D Scenario Topology Image 2 -->
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019104802_15079.png" alt="3D Parking Lane Topology: Central cashier, ticket scanning, entry/exit gates and UHF antenna">
+            </div>
+            <div class="img-caption">
+              <span>Figure 2: 3D Layout of Entry/Exit Lanes, Central Cashier Workstation, and UHF Long-Range Tenant Access</span>
+              <span class="img-zoom-hint">(Click to enlarge 3D scenario)</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Core Terminal Hardware Breakdown -->
+        <section id="entryStation">
+          <h3 class="section-h2">3. Smart Entry Station (Ticket Dispenser Terminal)</h3>
+          <p class="content-p">
+            Installed at each parking entrance lane, the ParkPro Intelligent Entry Station houses an industrial-grade thermal ticket printer, Mifare/ID RFID reader, interactive LCD guidance screen, voice intercom, and vehicle loop detector interlock.
+          </p>
+
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019113520_50465.png" alt="Intelligent Entry Ticket Dispenser Station Exterior Interface">
+            </div>
+            <div class="img-caption">
+              <span>Figure 3: Entry Ticket Dispenser Station Exterior Ergonomics & User Interfaces</span>
+            </div>
+          </div>
+
+          <p class="content-p">
+            <strong>Key Ergonomic & Functional Interfaces:</strong>
+          </p>
+          <div class="feature-cards-grid">
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">📺</div>
+              <div class="feature-card-title">High-Brightness LCD Screen</div>
+              <div class="feature-card-desc">Displays customized welcome prompts, real-time vacant spot counts, tariff rules, and operating instructions in English, Spanish, Arabic, etc.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">🎙️</div>
+              <div class="feature-card-title">IP Voice Intercom</div>
+              <div class="feature-card-desc">One-touch emergency call button linking drivers directly to the security control room or cashier desk for remote assistance.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">💳</div>
+              <div class="feature-card-title">Monthly Card Reader Area</div>
+              <div class="feature-card-desc">Contactless 13.56MHz Mifare / 125kHz EM-ID reader for VIPs, staff, and registered monthly permit holders (instant barrier lift).</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">🎫</div>
+              <div class="feature-card-title">Button-Take Ticket & Outlet</div>
+              <div class="feature-card-desc">Illuminated tactile push button for transient visitors. Fast thermal paper cut (0.8s), featuring high-density 1D/2D QR barcodes.</div>
+            </div>
+          </div>
+
+          <!-- Internal Components of Entry Dispenser -->
+          <h4 class="section-h3">Entry Station Internal Modular Components</h4>
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019113620_89278.png" alt="Internal components of intelligent entry ticket dispenser terminal">
+            </div>
+            <div class="img-caption">
+              <span>Figure 4: Industrial Internal Architecture of Entry Terminal (Heavy-Duty Components)</span>
+            </div>
+          </div>
+          <p class="content-p" style="font-size:0.9rem; color:#475569;">
+            Each terminal is equipped with a high-reliability industrial power supply (110V/220V AC input to DC 24V), dual vehicle loop detector interface, sound beeper, weatherproof cold-rolled steel chassis (IP54 rating, rustproof electrostatic powder coating), and dedicated parking control logic board.
+          </p>
+        </section>
+
+        <!-- Section 4: Exit Station -->
+        <section id="exitStation">
+          <h3 class="section-h2">4. Smart Exit Station (Ticket Validator Terminal)</h3>
+          <p class="content-p">
+            Located at the exit barrier lane, the ParkPro Exit Terminal reads transient barcode tickets, verifies payment clearance against the server database, captures valid tickets, and automatically triggers the exit boom barrier.
+          </p>
+
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019114504_23799.png" alt="Intelligent Exit Ticket Validator Station Exterior Interface">
+            </div>
+            <div class="img-caption">
+              <span>Figure 5: Exit Ticket Validator Station Interface (Insert Ticket & Monthly Swiping)</span>
+            </div>
+          </div>
+
+          <!-- Internal Components of Exit Validator -->
+          <h4 class="section-h3">Exit Station Internal Modular Architecture</h4>
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019114603_85007.png" alt="Internal components of intelligent exit ticket validator terminal">
+            </div>
+            <div class="img-caption">
+              <span>Figure 6: Exit Terminal Internal Hardware (Motorized Ticket Validator & Card Reader)</span>
+            </div>
+          </div>
+
+          <ul class="highlight-list">
+            <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Motorized Ticket Ingestion & Validation:</strong> Driver inserts ticket; the internal optical sensor checks the barcode ID against the database. If fully paid within the grace window, the ticket is retracted into the internal bin and the barrier raises.</li>
+            <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Unpaid Ticket Rejection:</strong> If the ticket has expired or remains unpaid, the mechanism spits the ticket back out with an audible warning and on-screen voice prompt: <em>"Please proceed to cashier or scan QR to pay."</em></li>
+            <li class="highlight-item"><span class="bullet-icon">❀</span> <strong>Offline Fallback Memory:</strong> Stores up to 100,000 offline authorization records ensuring gate operation even during temporary network interruptions.</li>
+          </ul>
+        </section>
+
+        <!-- Section 5: Cashier Workstation -->
+        <section id="cashierWorkstation">
+          <h3 class="section-h2">5. High-Speed Cashier POS Workstation (Manual & Central)</h3>
+          <p class="content-p">
+            For attended payment booths, central lobby cashier desks, and customer service counters, ParkPro supplies a ruggedized all-in-one POS payment console engineered for continuous 24/7 operation.
+          </p>
+
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019115105_80050.png" alt="High speed cashier payment POS workstation console">
+            </div>
+            <div class="img-caption">
+              <span>Figure 7: Cashier POS Workstation (Dual Displays, Receipt Printer, Barcode Scanner & USB Dongle)</span>
+            </div>
+          </div>
+
+          <div class="feature-cards-grid">
+            <div class="feature-card">
+              <div class="feature-card-title">Dual High-Visibility Displays</div>
+              <div class="feature-card-desc">Operator LCD screen for managing transactions, paired with an elevated customer LED money display showing the exact parking fee in real-time.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-title">Honeywell 1D/2D Barcode Scanner</div>
+              <div class="feature-card-desc">High-speed omnidirectional scanning of paper parking tickets, electronic smartphone QR tickets, and merchant discount vouchers in under 0.2 seconds.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-title">High-Speed Thermal Receipt Printer</div>
+              <div class="feature-card-desc">Prints official tax-compliant fiscal receipts including parking duration, vehicle plate number, tariff category, VAT breakdown, and QR code invoice links.</div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-title">Hardware USB Security Dongle</div>
+              <div class="feature-card-desc">Encrypted hardware dongle safeguards unauthorized software tampering and enforces operator shift balance auditing.</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 6: Software Platform -->
+        <section id="softwareSection">
+          <h3 class="section-h2">6. Intelligent Management Software Platform & Cashier Client</h3>
+          <p class="content-p">
+            The ParkPro Smart Parking Software Suite delivers end-to-end oversight, combining a central server/cloud monitoring platform with an intuitive cashier lane execution interface.
+          </p>
+
+          <!-- Server Platform Screenshot -->
+          <h4 class="section-h3">Central Server & Controller Monitoring Dashboard</h4>
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019144645_59046.png" alt="Parking management system platform server monitor dashboard">
+            </div>
+            <div class="img-caption">
+              <span>Figure 8: Central System Platform (Controller Monitor, Cashier Status, Rate Tables & Server Logs)</span>
+            </div>
+          </div>
+
+          <p class="content-p">
+            <strong>Key Features of the Central Server Platform:</strong>
+          </p>
+          <ul class="highlight-list">
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Real-Time Hardware Health Monitoring:</strong> Live IP polling of Entrance/Exit controllers, Barrier gates, Loop detectors, Card machines, and Cashier terminals.</li>
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Flexible Tariff Engine:</strong> Supports complex overseas rate structures including free grace periods (e.g. first 15 mins free), tiered hourly rates, day/night tariffs, holiday surcharges, and daily maximum caps.</li>
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Discount & Merchant Voucher Management:</strong> Enables mall retailers to grant 1-hour, 2-hour, or percentage parking discounts via Web QR or POS stamps.</li>
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Comprehensive Financial Auditing:</strong> Generates automated daily, weekly, and monthly revenue reports exportable to Excel/PDF with shift-level cash accountability.</li>
+          </ul>
+
+          <!-- Cashier Client Screenshot -->
+          <h4 class="section-h3">Real-Time Lane Cashier & Plate Recognition Client</h4>
+          <div class="img-showcase">
+            <div class="img-container">
+              <img src="20241019144808_49052.png" alt="Cashier client software with real-time camera video stream, plate recognition, card scan and barrier control">
+            </div>
+            <div class="img-caption">
+              <span>Figure 9: Cashier Client Software Interface (Live HD Video Feeds, LPR Recognition, and Barrier Control)</span>
+            </div>
+          </div>
+
+          <p class="content-p">
+            <strong>Operator Execution Capabilities:</strong>
+          </p>
+          <ul class="highlight-list">
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Quad-View Live Camera Streaming:</strong> Real-time vehicle video snapshots upon entry and exit for visual comparison and anti-theft security.</li>
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>ANPR/LPR Plate Auto-Matching:</strong> Recognizes plate characters automatically; matches entry timestamp and displays stay duration, calculated fee, and discount vouchers.</li>
+            <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>One-Click Override Controls:</strong> Dedicated touch buttons for Barrier Open/Close, VIP Pass, Cash Billing, and Receipt Printing.</li>
+          </ul>
+        </section>
+
+        <!-- Section 7: Scenario Solutions (Airports & Commercial Plazas) -->
+        <section id="scenariosSection">
+          <h3 class="section-h2">7. Specialized Application Scenarios & Global Case Profiles</h3>
+          <p class="content-p">
+            Our systems are specifically customized to address the operational demands of distinct overseas parking environments:
+          </p>
+
+          <!-- Scenario Tabs -->
+          <div class="scenario-tabs">
+            <button class="tab-btn active" data-target="tabAirport">✈️ International Airports</button>
+            <button class="tab-btn" data-target="tabMall">🛍️ Commercial Plazas & Malls</button>
+            <button class="tab-btn" data-target="tabGarage">🏢 Municipal Multi-Level Garages</button>
+          </div>
+
+          <!-- Airport Tab Pane -->
+          <div class="tab-pane active" id="tabAirport">
+            <div class="scenario-content">
+              <div class="scenario-details">
+                <h4>International Airport Terminal Parking Solution</h4>
+                <p class="content-p" style="font-size:0.9rem;">
+                  Airports experience intense peak traffic surges, mixed vehicle categories (taxis, ride-shares, long-term travelers, VIP shuttles), and high security demands.
+                </p>
+                <ul class="highlight-list" style="font-size:0.85rem;">
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>High-Throughput Lanes:</strong> Dual ticket dispenser and dual LPR cameras per lane handling up to 600 vehicles/hour.</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Zoned Dynamic Tariffs:</strong> Short-term drop-off zones (strict progressive pricing) vs long-term economy parking (daily caps).</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Flight Delay Buffer:</strong> Connects to flight API to dynamically grant grace periods during weather delays.</li>
+                </ul>
+              </div>
+              <div>
+                <img src="20241019104802_15079.png" alt="Airport terminal multi lane parking layout" style="border-radius:var(--radius-md); box-shadow:var(--shadow-md);">
+              </div>
+            </div>
+          </div>
+
+          <!-- Mall Tab Pane -->
+          <div class="tab-pane" id="tabMall">
+            <div class="scenario-content">
+              <div class="scenario-details">
+                <h4>Shopping Mall & Commercial Center Parking Solution</h4>
+                <p class="content-p" style="font-size:0.9rem;">
+                  Commercial complexes require smooth customer parking to stimulate retail spending, accompanied by seamless tenant discount administration.
+                </p>
+                <ul class="highlight-list" style="font-size:0.85rem;">
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Merchant Spend-to-Park Integration:</strong> Supermarkets and cinemas issue digital QR validation vouchers scanning directly at payment kiosks.</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Pay-on-Foot Lobby Stations:</strong> Shoppers settle parking fees before taking elevators, ensuring zero exit bottlenecks.</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Ultrasonic Space Guidance:</strong> Overhead green/red LEDs guide drivers straight to vacant spots in multi-floor basements.</li>
+                </ul>
+              </div>
+              <div>
+                <img src="20241018104915_51230.jpg" alt="Commercial shopping mall central parking payment mode" style="border-radius:var(--radius-md); box-shadow:var(--shadow-md);">
+              </div>
+            </div>
+          </div>
+
+          <!-- Garage Tab Pane -->
+          <div class="tab-pane" id="tabGarage">
+            <div class="scenario-content">
+              <div class="scenario-details">
+                <h4>Municipal & Multi-Level Smart Garage Solution</h4>
+                <p class="content-p" style="font-size:0.9rem;">
+                  Public urban parking facilities demand automated ticketless operations, unattended 24/7 reliability, and centralized city-cloud dashboard auditing.
+                </p>
+                <ul class="highlight-list" style="font-size:0.85rem;">
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Unattended Entry & Exit:</strong> Autonomous ticket issuance, ANPR plate tracking, and credit card tap-and-go.</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>Space-Level LED Indicator:</strong> High-precision ultrasonic sensors reliably detect compact cars, SUVs, and electric vehicles.</li>
+                  <li class="highlight-item"><span class="bullet-icon">✓</span> <strong>City Smart Mobility API:</strong> Open WebService REST API pushing available space data to municipal guidance signage.</li>
+                </ul>
+              </div>
+              <div>
+                <img src="20241019144645_59046.png" alt="Municipal garage software platform dashboard" style="border-radius:var(--radius-md); box-shadow:var(--shadow-md);">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 8: Technical Specifications -->
+        <section id="techSpecs">
+          <h3 class="section-h2">8. Engineering Specifications & Technical Parameters</h3>
+          <p class="content-p">
+            Manufactured in strict compliance with ISO9001, CE, and FCC industrial export criteria:
+          </p>
+
+          <div class="spec-table-wrap">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Parameter / Module</th>
+                  <th>Entry Ticket Dispenser</th>
+                  <th>Exit Ticket Validator</th>
+                  <th>Cashier POS Workstation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Operating Voltage</strong></td>
+                  <td>AC 110V / 220V ±10%, 50/60Hz</td>
+                  <td>AC 110V / 220V ±10%, 50/60Hz</td>
+                  <td>AC 100V - 240V Universal</td>
+                </tr>
+                <tr>
+                  <td><strong>Working Temperature</strong></td>
+                  <td>-30°C to +75°C (Built-in heater optional)</td>
+                  <td>-30°C to +75°C</td>
+                  <td>0°C to +50°C (Indoor console)</td>
+                </tr>
+                <tr>
+                  <td><strong>Enclosure Material</strong></td>
+                  <td>2.0mm Cold-Rolled Steel / Powder Coated</td>
+                  <td>2.0mm Cold-Rolled Steel / Powder Coated</td>
+                  <td>Ruggedized ABS + Aluminum Frame</td>
+                </tr>
+                <tr>
+                  <td><strong>Protection Rating</strong></td>
+                  <td>IP54 Outdoor Weatherproof</td>
+                  <td>IP54 Outdoor Weatherproof</td>
+                  <td>IP31 Commercial Grade</td>
+                </tr>
+                <tr>
+                  <td><strong>Ticket Printing / Reading Speed</strong></td>
+                  <td>≤ 0.8 seconds (Thermal paper cutter)</td>
+                  <td>≤ 0.5 seconds (Motorized validator)</td>
+                  <td>≤ 0.2 seconds (Honeywell 2D scanner)</td>
+                </tr>
+                <tr>
+                  <td><strong>Paper Roll Capacity</strong></td>
+                  <td>Up to 3,000 thermal tickets per roll</td>
+                  <td>Retracts 1,500 tickets into bin</td>
+                  <td>Thermal receipt rolls (80mm width)</td>
+                </tr>
+                <tr>
+                  <td><strong>Communication Interface</strong></td>
+                  <td>TCP/IP Ethernet & RS485 / CAN-Bus</td>
+                  <td>TCP/IP Ethernet & RS485 / CAN-Bus</td>
+                  <td>USB 2.0 / 3.0, RS232, Gigabit LAN</td>
+                </tr>
+                <tr>
+                  <td><strong>Card Reader Compatibility</strong></td>
+                  <td>Mifare 13.56MHz & EM-ID 125kHz</td>
+                  <td>Mifare 13.56MHz & EM-ID 125kHz</td>
+                  <td>Integrated Desktop USB Card Reader</td>
+                </tr>
+                <tr>
+                  <td><strong>Voice Intercom</strong></td>
+                  <td>Built-in IP intercom & call button</td>
+                  <td>Built-in IP intercom & call button</td>
+                  <td>Integrated mic/speaker interface</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Section 9: Interactive Inquiry Form (Direct Lead Gen) -->
+        <section id="inquirySection" class="inquiry-section">
+          <div class="inquiry-header">
+            <h3>Get a Fast Turnkey Project Quotation</h3>
+            <p>Direct from Shenzhen Manufacturer: customized lane configuration, tariff consultation, and factory-direct pricing within 24 hours.</p>
+          </div>
+
+          <form class="inquiry-form inquiry-form-submit">
+            <div class="form-group">
+              <label class="form-label">Full Name <span class="req">*</span></label>
+              <input type="text" class="form-control" placeholder="e.g. Johnathan Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Business Email <span class="req">*</span></label>
+              <input type="email" class="form-control" placeholder="e.g. j.smith@airport-parking.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp Number</label>
+              <input type="text" class="form-control" placeholder="e.g. +1 555 123 4567">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Company Name & Country <span class="req">*</span></label>
+              <input type="text" class="form-control" placeholder="e.g. Apex Security Solutions Ltd. (United Kingdom)" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Target Project Scenario <span class="req">*</span></label>
+              <select class="form-control" required>
+                <option value="">-- Please Select Scenario --</option>
+                <option value="commercial_plaza">Shopping Mall / Commercial Plaza</option>
+                <option value="airport">International Airport Terminal</option>
+                <option value="municipal_garage">Municipal / Multi-Level Car Park</option>
+                <option value="hospital_campus">Hospital / University Campus</option>
+                <option value="hardware_distributor">Hardware Distributor / System Integrator</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Estimated Lanes & Parking Stalls</label>
+              <input type="text" class="form-control" placeholder="e.g. 4 Entry Lanes, 4 Exit Lanes, 1,200 Bays">
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">Detailed Project Requirements & Scope <span class="req">*</span></label>
+              <textarea class="form-control" placeholder="Please describe your lane setup, desired payment methods (Cash/Credit Card/QR), local voltage/currency, and timeline. (Min 20 characters)" required minlength="20" maxlength="3000"></textarea>
+              <div class="char-counter">Characters: <span>0</span> / 3000 (Min 20)</div>
+            </div>
+
+            <div class="form-submit-row">
+              <span style="font-size:0.85rem; color:#64748b;">🔒 Your privacy is protected under strict NDA.</span>
+              <button type="submit" class="btn btn-accent">SUBMIT PROJECT INQUIRY</button>
+            </div>
+          </form>
+        </section>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       6. Floating Action Widgets (WhatsApp & Quote)
+       ========================================================================= -->
+  <div class="floating-widgets">
+    <a href="https://wa.me/8615677223292" target="_blank" class="float-btn float-btn-wa" title="WhatsApp Chat">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      <div class="float-tooltip">WhatsApp: +86 15677223292</div>
+    </a>
+
+    <div class="float-btn float-btn-inquiry open-quote-modal" title="Quick Quote">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <div class="float-tooltip">Instant RFQ Quote</div>
+    </div>
+
+    <div class="float-btn float-btn-top" id="floatTop" title="Back to Top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+      <div class="float-tooltip">Back to Top</div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       7. Modal Dialogs: Quote Request & Image Lightbox
+       ========================================================================= -->
+  <!-- Quote Modal -->
+  <div class="modal-overlay" id="quoteModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Request a Quick Quotation</div>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="inquiry-form-submit" style="display:flex; flex-direction:column; gap:14px;">
+          <div>
+            <label class="form-label">Work Email <span class="req">*</span></label>
+            <input type="email" class="form-control" placeholder="yourname@company.com" required>
+          </div>
+          <div>
+            <label class="form-label">Phone / WhatsApp</label>
+            <input type="text" class="form-control" placeholder="+ Country Code - Number">
+          </div>
+          <div>
+            <label class="form-label">Your Inquiry & Project Details <span class="req">*</span></label>
+            <textarea class="form-control" rows="4" placeholder="Please specify: number of lanes, scenario (airport/mall/garage), and required delivery date." required minlength="15"></textarea>
+            <div class="char-counter">Characters: <span>0</span> / 3000</div>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top:8px;">SEND INQUIRY NOW</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Zoomed Diagram" id="lightboxImg">
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       8. Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>PARKPRO TECHNOLOGY</h4>
+        <p>
+          Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司) is a pioneer in intelligent access control, ticketed parking revenue automation, ANPR/LPR systems, and ultrasonic parking space guidance solutions. Serving airport, commercial, and urban mobility projects worldwide.
+        </p>
+        <div style="font-size:0.85rem; color:#94a3b8;">
+          ISO9001:2015 Registered • CE & FCC Approved • Global Export Direct
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Solutions</h5>
+        <div class="footer-links">
+          <a href="#scenariosSection">Airport Parking Systems</a>
+          <a href="#scenariosSection">Commercial Plaza Parking</a>
+          <a href="#systemArchitecture">Central Payment Architecture</a>
+          <a href="#systemArchitecture">Exit Payment Architecture</a>
+          <a href="#softwareSection">Cloud Management Platform</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Hardware</h5>
+        <div class="footer-links">
+          <a href="#entryStation">Entry Ticket Dispensers</a>
+          <a href="#exitStation">Exit Ticket Validators</a>
+          <a href="#cashierWorkstation">Cashier Workstation POS</a>
+          <a href="products.html">High-Speed Barrier Gates</a>
+          <a href="products.html">Ultrasonic Guidance Sensors</a>
+          <a href="products.html">ANPR/LPR HD Cameras</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact Us</h5>
+        <div class="footer-contact-info">
+          <div class="footer-contact-row">
+            <span>📍</span>
+            <span>Room 409, 4th Floor, Qinghu Hengbo Innovation Industrial Park, Longhua District, Shenzhen, Guangdong Province</span>
+          </div>
+          <div class="footer-contact-row">
+            <span>✉️</span>
+            <a href="mailto:jadehuang57@gmail.com">jadehuang57@gmail.com</a>
+          </div>
+          <div class="footer-contact-row">
+            <span>📞</span>
+            <span>+86 15677223292 (WhatsApp: 15677223292)</span>
+          </div>
+          <div class="footer-contact-row">
+            <span>🌐</span>
+            <span>www.parkprotech.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© 2026 Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司). All Rights Reserved.</div>
+      <div>Designed for International Engineering & Smart Mobility Infrastructure.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
