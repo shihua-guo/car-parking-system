@@ -80,3 +80,18 @@ D:\document\2026年9月2日 简历\car parking system\
 - **电子邮箱 (Email)**：jadehuang57@gmail.com
 - **工作时间 (Working Hours)**：Monday to Friday: 9:00am- 18:00pm
 
+---
+
+### 五、线上部署与公网访问地址（Online Deployment & URLs）
+
+#### 1. N150 本地服务器 + Cloudflare Tunnel（支持全球高速访问 & 免费 SSL）
+- **全球主域名**：[https://parking.somany.fun](https://parking.somany.fun)
+- **品牌别名域名**：[https://parkpro.somany.fun](https://parkpro.somany.fun)
+- **局域网直连访问**：`http://192.168.2.126/parking/`
+- **N150 部署目录**：`/var/www/car-parking-system` (Apache2 + Cloudflared 隧道直接分发)
+
+#### 2. GitHub Pages 全球 CDN
+- **公网地址**：[https://shihua-guo.github.io/car-parking-system/](https://shihua-guo.github.io/car-parking-system/)
+- **代码仓库**：[https://github.com/shihua-guo/car-parking-system](https://github.com/shihua-guo/car-parking-system)
+
+
