@@ -167,6 +167,8 @@ button, input, textarea, select {
   font-size: 0.825rem;
   padding: 8px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 1001;
 }
 .top-bar-inner {
   display: flex;
@@ -220,7 +222,7 @@ button, input, textarea, select {
   padding: 8px 0;
   display: none;
   min-width: 150px;
-  z-index: 1000;
+  z-index: 2000;
   border: 1px solid var(--border-color);
 }
 .lang-dropdown.show {
