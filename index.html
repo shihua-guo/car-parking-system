@@ -19,7 +19,7 @@
       <div class="top-contacts">
         <span class="top-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Room 409, 4th Floor, Qinghu Hengbo Innovation Industrial Park, Longhua District, Shenzhen, Guangdong Province
+          <span data-i18n="top_address">Room 409, 4th Floor, Qinghu Hengbo Innovation Industrial Park, Longhua District, Shenzhen, Guangdong Province</span>
         </span>
         <a href="mailto:jadehuang57@gmail.com" class="top-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -27,7 +27,7 @@
         </a>
         <a href="https://wa.me/8615677223292" target="_blank" class="top-contact-item">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-          WhatsApp: +86 15677223292
+          <span data-i18n="top_whatsapp">WhatsApp: +86 15677223292</span>
         </a>
       </div>
 
@@ -35,22 +35,23 @@
         <!-- Language Switcher -->
         <div class="lang-selector" id="langSelector">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-          <span>English (Global)</span>
+          <span id="currentLangLabel">🇺🇸 English</span>
           <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
 
           <div class="lang-dropdown" id="langDropdown">
-            <a href="#">🇺🇸 English</a>
-            <a href="#">🇪🇸 Español</a>
-            <a href="#">🇫🇷 Français</a>
-            <a href="#">🇩🇪 Deutsch</a>
-            <a href="#">🇦🇪 العربية (Arabic)</a>
-            <a href="#">🇷🇺 Русский</a>
-            <a href="#">🇵🇹 Português</a>
-            <a href="#">🇯🇵 日本語</a>
+            <a href="#" data-lang="en">🇺🇸 English</a>
+            <a href="#" data-lang="zh">🇨🇳 简体中文</a>
+            <a href="#" data-lang="es">🇪🇸 Español</a>
+            <a href="#" data-lang="fr">🇫🇷 Français</a>
+            <a href="#" data-lang="de">🇩🇪 Deutsch</a>
+            <a href="#" data-lang="ar">🇦🇪 العربية</a>
+            <a href="#" data-lang="ru">🇷🇺 Русский</a>
+            <a href="#" data-lang="pt">🇵🇹 Português</a>
+            <a href="#" data-lang="ja">🇯🇵 日本語</a>
           </div>
         </div>
 
-        <a href="#inquirySection" class="badge badge-accent">OEM/ODM Available</a>
+        <a href="#inquirySection" class="badge badge-accent" data-i18n="badge_oem">OEM/ODM Available</a>
       </div>
     </div>
   </div>
@@ -69,21 +70,21 @@
       </a>
 
       <nav class="main-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="solutions.html" class="nav-link">Solutions</a>
-        <a href="products.html" class="nav-link">Products & Hardware</a>
-        <a href="#softwareSection" class="nav-link">Cloud Platform</a>
-        <a href="#scenariosSection" class="nav-link">Airport & Mall Cases</a>
-        <a href="about.html" class="nav-link">About Us</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="index.html" class="nav-link active" data-nav="home" data-i18n="nav_home">Home</a>
+        <a href="solutions.html" class="nav-link" data-nav="solutions" data-i18n="nav_solutions">Solutions</a>
+        <a href="products.html" class="nav-link" data-nav="products" data-i18n="nav_products">Products & Hardware</a>
+        <a href="#softwareSection" class="nav-link" data-nav="software" data-i18n="nav_cloud">Cloud Platform</a>
+        <a href="#scenariosSection" class="nav-link" data-nav="scenarios" data-i18n="nav_scenarios">Airport & Mall Cases</a>
+        <a href="about.html" class="nav-link" data-nav="about" data-i18n="nav_about">About Us</a>
+        <a href="contact.html" class="nav-link" data-nav="contact" data-i18n="nav_contact">Contact</a>
       </nav>
 
       <div class="header-actions">
         <div class="header-search">
           <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-          <input type="text" placeholder="Search systems...">
+          <input type="text" placeholder="Search systems..." data-i18n-placeholder="search_placeholder">
         </div>
-        <button class="btn btn-accent btn-sm open-quote-modal">Get Best Price</button>
+        <button class="btn btn-accent btn-sm open-quote-modal" data-i18n="btn_get_price">Get Best Price</button>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
         </button>
@@ -98,10 +99,10 @@
     <div class="container banner-content">
       <div class="banner-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-        Global Solution Showcase | Turnkey Export Engineering
+        <span data-i18n="banner_badge">Global Solution Showcase | Turnkey Export Engineering</span>
       </div>
-      <h1 class="banner-title">Turnkey Overseas Parking Service System: Automated Fee Collection & Ultrasonic Guidance</h1>
-      <p class="banner-desc">
+      <h1 class="banner-title" data-i18n="banner_title">Turnkey Overseas Parking Service System: Automated Fee Collection & Ultrasonic Guidance</h1>
+      <p class="banner-desc" data-i18n="banner_desc">
         Engineered specifically for international commercial plazas, international airports, municipal transit hubs, and smart parking garages. Integrating ticket dispensers, barcode validators, manual cashier POS, LPR cameras, and real-time cloud management.
       </p>
     </div>
@@ -114,12 +115,12 @@
     <div class="container breadcrumbs">
       <a href="index.html">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-        Home
+        <span data-i18n="bc_home">Home</span>
       </a>
       <span class="sep">></span>
-      <a href="solutions.html">Solutions & Cases</a>
+      <a href="solutions.html" data-i18n="bc_solutions">Solutions & Cases</a>
       <span class="sep">></span>
-      <span class="current">Overseas Parking Service & Fee Management System</span>
+      <span class="current" data-i18n="bc_current">Overseas Parking Service & Fee Management System</span>
     </div>
   </div>
 
@@ -137,32 +138,32 @@
         <!-- Navigation Jump Index -->
         <div class="sidebar-box">
           <div class="sidebar-title">
-            <span>Solution Sections</span>
+            <span data-i18n="sidebar_title_sections">Solution Sections</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
           </div>
           <ul class="sidebar-nav-list">
-            <li class="sidebar-nav-item active"><a href="#projectOverview">1. Project Overview & Background <span class="counter">01</span></a></li>
-            <li class="sidebar-nav-item"><a href="#systemArchitecture">2. Dual System Architectures <span class="counter">02</span></a></li>
-            <li class="sidebar-nav-item"><a href="#entryStation">3. Smart Entry Station (Dispenser) <span class="counter">03</span></a></li>
-            <li class="sidebar-nav-item"><a href="#exitStation">4. Smart Exit Station (Validator) <span class="counter">04</span></a></li>
-            <li class="sidebar-nav-item"><a href="#cashierWorkstation">5. Cashier POS Workstation <span class="counter">05</span></a></li>
-            <li class="sidebar-nav-item"><a href="#softwareSection">6. Cloud & Cashier Software <span class="counter">06</span></a></li>
-            <li class="sidebar-nav-item"><a href="#scenariosSection">7. Airport & Mall Scenarios <span class="counter">07</span></a></li>
-            <li class="sidebar-nav-item"><a href="#techSpecs">8. Technical Specifications <span class="counter">08</span></a></li>
-            <li class="sidebar-nav-item"><a href="#inquirySection">9. Request Official Quotation <span class="counter">RFQ</span></a></li>
+            <li class="sidebar-nav-item active"><a href="#projectOverview"><span data-i18n="side_nav_1">1. Project Overview & Background</span> <span class="counter">01</span></a></li>
+            <li class="sidebar-nav-item"><a href="#systemArchitecture"><span data-i18n="side_nav_2">2. Dual System Architectures</span> <span class="counter">02</span></a></li>
+            <li class="sidebar-nav-item"><a href="#entryStation"><span data-i18n="side_nav_3">3. Smart Entry Station (Dispenser)</span> <span class="counter">03</span></a></li>
+            <li class="sidebar-nav-item"><a href="#exitStation"><span data-i18n="side_nav_4">4. Smart Exit Station (Validator)</span> <span class="counter">04</span></a></li>
+            <li class="sidebar-nav-item"><a href="#cashierWorkstation"><span data-i18n="side_nav_5">5. Cashier POS Workstation</span> <span class="counter">05</span></a></li>
+            <li class="sidebar-nav-item"><a href="#softwareSection"><span data-i18n="side_nav_6">6. Cloud & Cashier Software</span> <span class="counter">06</span></a></li>
+            <li class="sidebar-nav-item"><a href="#scenariosSection"><span data-i18n="side_nav_7">7. Airport & Mall Scenarios</span> <span class="counter">07</span></a></li>
+            <li class="sidebar-nav-item"><a href="#techSpecs"><span data-i18n="side_nav_8">8. Technical Specifications</span> <span class="counter">08</span></a></li>
+            <li class="sidebar-nav-item"><a href="#inquirySection"><span data-i18n="side_nav_9">9. Request Official Quotation</span> <span class="counter">RFQ</span></a></li>
           </ul>
         </div>
 
         <!-- B2B Contact Card (Jade Huang / Overseas Sales) -->
         <div class="sidebar-box">
           <div class="sidebar-title">
-            <span>Overseas Sales Team</span>
-            <span class="badge badge-success">Online</span>
+            <span data-i18n="sidebar_title_sales">Overseas Sales Team</span>
+            <span class="badge badge-success" data-i18n="status_online">Online</span>
           </div>
           <div class="contact-card">
             <div class="contact-avatar">👩‍💼</div>
-            <div class="contact-name">Jade Huang</div>
-            <div class="contact-role">Overseas Project Director</div>
+            <div class="contact-name" data-i18n="sales_name">Jade Huang</div>
+            <div class="contact-role" data-i18n="sales_role">Overseas Project Director</div>
 
             <div class="contact-detail-list">
               <div class="contact-detail-row">
@@ -543,16 +544,16 @@
 
         <!-- Section 7: Scenario Solutions (Airports & Commercial Plazas) -->
         <section id="scenariosSection">
-          <h3 class="section-h2">7. Specialized Application Scenarios & Global Case Profiles</h3>
-          <p class="content-p">
+          <h3 class="section-h2" data-i18n="sec7_title">7. Specialized Application Scenarios & Global Case Profiles</h3>
+          <p class="content-p" data-i18n="sec7_intro">
             Our systems are specifically customized to address the operational demands of distinct overseas parking environments:
           </p>
 
           <!-- Scenario Tabs -->
           <div class="scenario-tabs">
-            <button class="tab-btn active" data-target="tabAirport">✈️ International Airports</button>
-            <button class="tab-btn" data-target="tabMall">🛍️ Commercial Plazas & Malls</button>
-            <button class="tab-btn" data-target="tabGarage">🏢 Municipal Multi-Level Garages</button>
+            <button class="tab-btn active" data-target="tabAirport" data-i18n="tab_airport">✈️ International Airports</button>
+            <button class="tab-btn" data-target="tabMall" data-i18n="tab_mall">🛍️ Commercial Plazas & Malls</button>
+            <button class="tab-btn" data-target="tabGarage" data-i18n="tab_garage">🏢 Municipal Multi-Level Garages</button>
           </div>
 
           <!-- Airport Tab Pane -->
@@ -877,11 +878,12 @@
     </div>
 
     <div class="container footer-bottom">
-      <div>© 2026 Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司). All Rights Reserved.</div>
-      <div>Designed for International Engineering & Smart Mobility Infrastructure.</div>
+      <div data-i18n="footer_rights">© 2026 Shenzhen ParkPro Technology Co., Ltd. (深圳市帕格泊科技有限公司). All Rights Reserved.</div>
+      <div data-i18n="footer_subtext">Designed for International Engineering & Smart Mobility Infrastructure.</div>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

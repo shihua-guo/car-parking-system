@@ -40,7 +40,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 85px;
   font-size: 16px;
+}
+
+section[id] {
+  scroll-margin-top: 85px;
 }
 
 body {
@@ -228,9 +233,11 @@ button, input, textarea, select {
   padding: 6px 14px;
   font-size: 0.85rem;
 }
-.lang-dropdown a:hover {
-  background: var(--bg-light);
-  color: var(--primary);
+.lang-dropdown a:hover,
+.lang-dropdown a.active {
+  background: rgba(255, 106, 0, 0.08);
+  color: var(--accent);
+  font-weight: 600;
 }
 
 /* --------------------------------------------------------------------------
